@@ -4,33 +4,25 @@ Aplicativo Android para gerenciamento de tarefas com foco em segurança e privac
 
 📄 Descrição do Projeto
 
-O SmartTask Secure é um aplicativo Android desenvolvido em Kotlin que permite aos usuários gerenciar tarefas diárias de forma prática e segura. O app combina funcionalidade, boa experiência do usuário e camadas de segurança, garantindo que dados pessoais e profissionais sejam protegidos e tratados de acordo com a LGPD.
+O SmartTask Secure é um aplicativo Android desenvolvido em Kotlin que permite gerenciar tarefas diárias de forma prática e segura. Ele combina funcionalidade, usabilidade e segurança, sendo ideal para demonstrar boas práticas em desenvolvimento mobile, conforme exigências acadêmicas e de mercado.
 
-Principais objetivos:
+O aplicativo oferece:
 
-Organizar tarefas do dia a dia
-Garantir segurança e privacidade dos dados
-Seguir boas práticas de desenvolvimento mobile
-🔐 Funcionalidades de Segurança
-Autenticação do usuário: tela de login local com validação de credenciais.
-Controle de acesso: apenas usuários autenticados podem visualizar ou modificar tarefas.
-Proteção de dados: armazenamento seguro de tarefas com SharedPreferences e Gson.
-Uso correto de permissões: solicita apenas permissões essenciais, respeitando o modelo de runtime do Android.
-Boas práticas de codificação segura: código modularizado, organizado por pacotes, com nomes significativos e sem dados sensíveis hardcoded.
-Conformidade com a LGPD: coleta mínima de dados, armazenamento seguro e transparência no uso das informações do usuário.
-⚙️ Instruções para Execução
-Abra o projeto no Android Studio.
-Crie um emulador ou conecte um dispositivo Android:
-Exemplo: Pixel 6 com Android 14
-Compile e execute o aplicativo.
-Explore as funcionalidades:
-Tela de login
-Adição, edição e exclusão de tarefas
+Cadastro, listagem, edição e exclusão de tarefas
 Marcação de tarefas concluídas
-Lista dinâmica com RecyclerView
-Persistência segura dos dados localmente
+Armazenamento seguro de dados localmente
+Controle de acesso via autenticação de usuário
 
-📂 Estrutura do Projeto
+O projeto simula um cenário real de desenvolvimento, seguindo boas práticas de codificação e respeitando LGPD para tratamento de dados do usuário.
+
+🔐 Funcionalidades de Segurança Implementadas
+Autenticação do usuário: Tela de login local que impede acesso não autorizado
+Controle de acesso: Apenas usuários autenticados podem visualizar ou modificar tarefas; logout retorna à tela de login
+Proteção de dados: Dados armazenados de forma segura usando SharedPreferences e Gson
+Uso correto de permissões: Apenas permissões essenciais solicitadas, com explicação de cada uma
+Boas práticas de codificação: Estrutura modularizada (activities, adapter, model, utils), código legível, nomes de variáveis significativos e sem dados sensíveis hardcoded
+Conformidade LGPD: Coleta mínima de dados, armazenamento seguro e transparência quanto ao uso das informações
+🧩 Estrutura do Projeto
 com.example.smarttask
 │
 ├── activities
@@ -49,8 +41,28 @@ com.example.smarttask
 ├── res/layout
 │   ├── activity_main.xml
 │   └── item_tarefa.xml
+⚙️ Funcionalidades do Aplicativo
+Adicionar tarefas
+Listar tarefas dinamicamente com RecyclerView
+Editar e excluir tarefas existentes
+Marcar tarefas como concluídas
+Persistência segura de dados no dispositivo
+Interface organizada e intuitiva
 🛠️ Tecnologias Utilizadas
 Android Studio
 Kotlin
 RecyclerView
 SharedPreferences + Gson
+Boas práticas de codificação segura
+🚀 Instruções para Execução
+Clone o repositório:
+git clone https://github.com/seu-usuario/SmartTaskSecure.git
+Abra o projeto no Android Studio.
+Crie um emulador ou conecte um dispositivo Android:
+Exemplo: Pixel 6, Android 14
+Compile e execute o aplicativo.
+Teste todas as funcionalidades:
+Login e logout
+Adição, edição e exclusão de tarefas
+Marcação de tarefas concluídas
+Persistência de dados localmente
