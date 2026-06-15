@@ -41,6 +41,8 @@ com.example.smarttask
 ├── res/layout
 │   ├── activity_main.xml
 │   └── item_tarefa.xml
+
+
 ⚙️ Funcionalidades do Aplicativo
 Adicionar tarefas
 Listar tarefas dinamicamente com RecyclerView
@@ -48,12 +50,14 @@ Editar e excluir tarefas existentes
 Marcar tarefas como concluídas
 Persistência segura de dados no dispositivo
 Interface organizada e intuitiva
+
 🛠️ Tecnologias Utilizadas
 Android Studio
 Kotlin
 RecyclerView
 SharedPreferences + Gson
 Boas práticas de codificação segura
+
 🚀 Instruções para Execução
 Clone o repositório:
 git clone https://github.com/seu-usuario/SmartTaskSecure.git
